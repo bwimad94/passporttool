@@ -485,7 +485,7 @@ class Prompt(InputValidation,verifyWatermark,uploadImg,featureMatcher,AESCipher,
     def verifyDBInfo(self):
 
         try:
-            """ conn = mysql.connector.connect(user='bwimad', passwd='DdA2*H&tB', host='64.62.211.131',
+            """ conn = mysql.connector.connect(user='bwimad', passwd='#######', host='64.62.211.131',
                                                            database="bwimad_fyp")"""
             conn = mysql.connector.connect(user='root', passwd='root', host='localhost', database="fyp",
                                                 port=3306)
@@ -715,7 +715,7 @@ class Prompt(InputValidation,verifyWatermark,uploadImg,featureMatcher,AESCipher,
 
             #conn = mysql.connector
             try:
-                conn = mysql.connector.connect(user='bwimad', passwd='DdA2*H&tB', host='64.62.211.131',
+                conn = mysql.connector.connect(user='bwimad', passwd='########', host='64.62.211.131',
                                                database="bwimad_fyp")
             except mysql.connector.Error as err:
                 if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
